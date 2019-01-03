@@ -20,6 +20,6 @@ class Show < ActiveRecord::Base
     end
 
     def self.popular_shows
-        SELECT * FROM shows WHERE (shows.rating > 5)
+        pop_show = "SELECT * FROM shows WHERE (shows.rating > 5)"
     end
 end
