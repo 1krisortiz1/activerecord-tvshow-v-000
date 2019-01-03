@@ -21,5 +21,5 @@ class Show < ActiveRecord::Base
 
     def self.popular_shows
         SELECT * FROM shows WHERE (shows.rating > 5)
-    end 
+    end
 end
